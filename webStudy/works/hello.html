@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: peachpuff;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        span {
+            color: brown;
+            font-size: xx-large;
+        }
+
+        img {
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+    <SCript>
+        function show() {
+            document.getElementById("fig").src = "elvis.png";
+        }
+        function hide() {
+            document.getElementById("fig").src = "";
+        }
+    </SCript>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Web Study</h1>
+    He was an American singer <br>
+    <span onmouseover="show()" onmouseout="hide()">the King of Rock and Roll</span>
+    <div><img id="fig" src=""></div>
+    <ul>
+        <h2>학습 사이트</h2>
+        <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+        <li><a href="https://developer.mozilla.org/ko/">MDN Web Docs</a></li>
+        <li><a href="https://www.w3.org/">W3C</a></li>
+    </ul>
+</body>
+
+</html>
