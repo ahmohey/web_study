@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: peachpuff;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        span {
+            color: brown;
+            font-size: xx-large;
+        }
+
+        img {
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+    <SCript>
+        function show() {
+            document.getElementById("fig").src = "img/elvis.png";
+        }
+        function hide() {
+            document.getElementById("fig").src = "";
+        }
+    </SCript>
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <header>
+        <h1>Web Study</h1>
+    </header>
+    <nav>
+        <h2> He was an American singer</h2>
+    </nav>
+    <section>
+        <article id="event"><span onmouseover="show()" onmouseout="hide()">
+                <h3> the King of Rock and Roll</h3>
+            </span></article>
+        <article id="figure">
+            <div><img id="fig" src=""></div>
+        </article>
+        <article id="site">
+            <ul>
+                <h4>학습 사이트</h4>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/ko/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3.org/">W3C</a></li>
+            </ul>
+        </article>
+    </section>
+    <aside>
+        <h6>Form 만들기</h6>
+        <form name="fo" method="get" class="row gy-3 align-items-center">
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInput">User</label>
+                <input type="text" class="form-control" id="autoSizingInput" placeholder="User" size="15" value="">
+            </div>
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInput">Pass</label>
+                <input type="password" class="form-control" id="autoSizingInput" placeholder="Pass" size="15" value="">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </aside>
+    <footer>
+        <h5>시맨틱 태그 구성해보기</h5>
+
+        <p>실습 1일차 내용에 2일차 내용 덮어씌워보기</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
