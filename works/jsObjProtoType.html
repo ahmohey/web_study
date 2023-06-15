@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsObjPrototype</title>
+    <script>
+        function Car(owner) {
+            this.owner = owner;
+            this.brand = "BMW";
+            this.model = "B33";
+            this.price = 300000000;
+          
+
+            this.expense = function () {
+                return this.price
+            }
+            this.sale = function () {
+                return this.expense()
+            }
+            this.rental = function (month) {
+                this.price /= month
+                return this.price
+            }
+
+        }</script>
+</head>
+
+<body>
+    <script>
+        let tom = new Car("tom");
+        let scoct = new Car("scoct");
+
+        tom.sale();
+        document.write(tom.owner + "은" + tom.brand + "" + tom.model + "을 구매 비용은" + tom.expense() + "원" + "<br>")
+        scoct.rental(60);
+        document.write(scoct.owner + "은" + scoct.brand + "" + scoct.model + "을 렌탈 비용은 매월 " + scoct.expense() + "원" + "<br>")
+
+    </script>
+</body>
+
+</html>
