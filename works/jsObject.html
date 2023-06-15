@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let account = {
+            // 프로퍼티 생성 및 초기화
+            owner: "황기태", // 계좌 주인
+            code: "111", // 계좌 코드
+            balance: 35000, // 잔액 프로퍼티
+            // 메소드 작성
+            inquiry: function () { return this.balance; }, // 잔금 조회
+            deposit: function (money) { this.balance += money; }, // 저금. money 만큼 저금
+            withdraw: function (money) { // 예금 인출, money는 인출하고자 하는 액수
+                // money가 balance보다 작다고 가정
+                this.balance -= money;
+                return money;
+            }
+        };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

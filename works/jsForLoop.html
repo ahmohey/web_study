@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaStars</title>
+</head>
+
+<body>
+    <h2>JS For Loop painting Stars</h2>
+    <p id="dot"></p>
+    <script>
+        const stars = ["*", "**", "***", "****", "*****"];
+        let paint = "";
+        for (let i = 0; i < stars.length; i++) {
+            paint += stars[i] + "<br>";
+        }
+        document.getElementById("dot").innerHTML = paint;
+
+
+
+
+    </script>
+</body>
+
+</html>
